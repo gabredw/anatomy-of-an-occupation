@@ -1,0 +1,48 @@
+#sec-title-page {
+    height: 100vh;
+}
+
+#sec-timeline-map {
+    height: 400vh;
+    position: relative;
+}
+
+#sec-timeline-map .sticky-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: black;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0.4rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    transform: translateX(-4.5px);
+}
