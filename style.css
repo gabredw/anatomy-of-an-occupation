@@ -1,5 +1,38 @@
+:root {
+    --serif: 'Gloock', serif;
+    --sans: 'Instrument Sans', sans-serif;
+    --mono: 'DM Mono', monospace;
+}
+
+h1, h2, h3 {
+    font-family: var(--serif);
+    color: #e81e39;
+}
+
+body {
+    font-family: var(--sans);
+    color: blanchedalmond;
+    background-color: 	#171c15;
+}
+
 #sec-title-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
+}
+
+#sec-title-page h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 100;
+    line-height: 0%;
+}
+
+.scroll {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: #989e8b;
 }
 
 #sec-timeline-map {
@@ -27,7 +60,7 @@
     top: 0;
     bottom: 0;
     width: 1px;
-    background: black;
+    background: blanchedalmond;
 }
 
 .timeline-event {
@@ -43,6 +76,6 @@
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: black;
+    background: blanchedalmond;
     transform: translateX(-4.5px);
 }
