@@ -9,7 +9,7 @@ h1, h2, h3 {
     color: #e81e39;
 }
 
-h2, h3 {
+h3 {
     color: blanchedalmond;
 }
 
@@ -66,7 +66,7 @@ body {
     top: 0;
     bottom: 0;
     width: 1px;
-    background: #e81e39;
+    background: #8f9c8a;
 }
 
 .timeline-event {
@@ -84,4 +84,16 @@ body {
     border-radius: 50%;
     background: #e81e39;
     transform: translateX(-4.5px);
+}
+
+.section-title h2 {
+    font-size: clamp(2rem, 3vw, 4rem);
+    font-weight: 100;
+    line-height: 0.1;
+}
+
+.section-title p {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: #8f9c8a;
 }
