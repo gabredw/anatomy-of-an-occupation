@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gloock&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet">
 </head>
 <body>
 
@@ -21,7 +23,7 @@
         <div class="sticky-container">
 
             <div class="map-panel">
-                [ Insert map here ]
+                <div id="map" style="height: 100%"></div>
             </div>
 
             <div class="timeline-panel">
@@ -65,5 +67,6 @@
         </div>
     </section>
     
+    <script src="script.js"></script>
 </body>
 </html>
