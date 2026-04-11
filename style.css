@@ -42,25 +42,39 @@ body {
 }
 
 #sec-timeline-map {
-    height: 400vh;
-    position: relative;
+    display: flex;
+    height: 100vh;
 }
 
 #sec-timeline-map .sticky-container {
     position: sticky;
-    top: 0;
-    height: 100vh;
-    display: grid;
-    grid-template-columns:0.4fr 0.6fr;
+    /* top: 0; */
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    height: 300vh;
+    /* grid-template-columns:0.4fr 0.6fr; */
 }
 
 .map-panel {
+    /* width: 20%; */
+    flex: 1;
     height: 100vh;
+    position: sticky;
+    top: 0;
 }
 
 #map {
     height: 100%;
     margin-right: 20px;
+}
+
+.timeline-panel {
+    /* width: 80%; */
+    flex: 1;
+    padding: 2rem;
 }
 
 .timeline {
@@ -105,4 +119,8 @@ body {
     font-family: var(--mono);
     font-size: 0.7rem;
     color: #8f9c8a;
+}
+
+.timeline-event-title {
+    font-weight: bold;
 }
