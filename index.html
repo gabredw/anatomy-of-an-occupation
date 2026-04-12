@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Gloock&family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet">
+</head>
+<body>
+
+    <section class="section" id="sec-title-page">
+        <h1>Anatomy of an Occupation</h1>
+        <p>A Visual Timeline of Israel's Injustices in Palestine</p>
+        <div class="scroll">↓ scroll to begin ↓</div>
+    </section>
+
+    <section class="section" id="sec-timeline-map">
+        <div class="sticky-container">
+
+            <div class="map-panel">
+                <div id="map" style="height: 100%"></div>
+            </div>
+
+            <div class="right-col">
+                <div class="timeline-panel">
+                    <div class="section-title">
+                        <h2>Timeline of Events</h2>
+                        <p>Key events in the dispossession of the Palestinian people</p>
+                    </div>
+
+                    <div class="timeline">
+                        <div class="timeline-event">
+
+                            <h3 class="timeline-year">1917</h3>
+                            <div class="timeline-event-text">British Foreign Secretary Arthur Balfour sends a letter to Baron Rothschild, a prominent British Zionist leader stating the following:</div>
+                            <p class="timeline-event-quote">"His Majesty's Government view with favour <strong>the establishment in Palestine of a national home for the Jewish people</strong>, and will use their best endeavours to facilitate the achievement of this object, it being clearly understood that <strong>nothing shall be done which may prejudice the civil and religious rights of existing non-Jewish communities in Palestine</strong>, or the rights and political status enjoyed by Jews in any other country."</p>
+                            <p class="timeline-event-text">This letter, known as the Balfour Declaration, was “made by a European power … about a non-European territory … in a flat disregard of both the presence and wishes of the native majority resident in that territory,” in the words of Palestinian-American Academic Edward Said. It is widely considered to be one of the main catalysts for the Nakba&mdash;the ethnic cleansing of Palestinians from their land.</p>
+
+                        </div>
+
+                        <div class="timeline-event">
+
+                            <h3 class="timeline-year">1922</h3>
+                            <div class="timeline-event-text">The King-Crane Commission Report is released by the United States government, commenting on the Balfour Declaration:</div>
+                            <p class="timeline-event-quote">“For ‘a national home for the Jewish people’ is not equivalent to making Palestine into a Jewish State; <strong> nor can the erection of such a Jewish State be accomplished without the gravest trespass upon the ‘civil and religious rights of existing non-Jewish communities in Palestine.’</strong> The fact came out repeatedly in the Commission’s conference with Jewish representatives, that <strong>the Zionists looked forward to a practically complete dispossession of the present non-Jewish inhabitants of Palestine, by various forms of purchase.</strong>”</p>
+
+                        </div>
+
+                        <div class="timeline-event">
+
+                            <h3 class="timeline-year">1936&ndash;1939</h3>
+                            <div class="timeline-event-text">Palestinians launch an uprising against British rule and Zionist coloniazation, known as the Arab Revolt. The movement initially consisted of nonviolent actions such as labor strikes, the witholding of taxes, and protests. When nonviolent means failed to effect change, an armed uprising broke out in 1937. In 1939 the revolt was suppressed by the British with the help of Zionist militias, killing, jailing, and exiling Palestinian leaders and disarming fighters. In doing so, they allowed the Zionist movement to, in the words of Israeli historian Ilan Pappe, "carve out an independent enclave for itself in Palestine as the infrastructure for a future state."</div>
+
+                        </div>
+
+                        <div class="timeline-event">
+
+                            <h3 class="timeline-year">1947</h3>
+                            <div class="timeline-event-text">In November, Britain announces the end of the mandate, handing the fate of the Palestinians to the UN. The UN subsiquently passed Resolution 181 calling for the partition of Palestine into two states&mdash;55% of the land would go to the Jewish state and 42% to the Palestinians. At the time, Jews made up just a third of the population and owned only 7% of the privately owned land.</div>
+                            <p class="timeline-event-text">David Ben-Gurion, who would become the first prime minister of Israel said that the borders “will be determined by force and not by the partition resolution.”</p>
+                            <p class="timeline-event-text">By the end of December, 1947, Zionist militias had already driven almost 75,000 Palestinians from their homes.</p>
+                        </div>
+
+                        <div class="timeline-event">
+
+                            <h3 class="timeline-year">1948&ndash;1950</h3>
+                            <div class="timeline-event-text">Between 750,000 and one million Palestinians are ethnically cleansed from their homes in what is called the<strong> Nakba</strong>, or "the catastrophe" in English. Zionist militias and the new Israeli army carry out dozens of massacres of Palestinian, prompting many to leave their homes. During this time, over 400 towns were destroyed by these militias and the Israeli army in order to prevent the Palestinians' return.</div>
+                            <p class="timeline-event-text">The state of Israel is declared on May 14, 1948.</p>
+
+                        </div>
+
+                        <div class="timeline-event">
+
+                            <h3 class="timeline-year">1967</h3>
+                            <div class="timeline-event-text">During the 1967 war, Israel occupied the West Bank, Gaza, and East Jerusalem; all three territories remain under occupation to this day. 300,000 Palestinians were expelled from the West Bank and Gaza during the war, 175,000 of whom had already been displaced in 1948.</div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    
+    <script src="script.js"></script>
+</body>
+</html>
