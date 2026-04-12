@@ -1,0 +1,99 @@
+:root {
+    --serif: 'Gloock', serif;
+    --sans: 'Instrument Sans', sans-serif;
+    --mono: 'DM Mono', monospace;
+}
+
+h1, h2, h3 {
+    font-family: var(--serif);
+    color: #e81e39;
+}
+
+h3 {
+    color: blanchedalmond;
+}
+
+body {
+    font-family: var(--sans);
+    color: blanchedalmond;
+    background-color: 	#171c15;
+}
+
+#sec-title-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#sec-title-page h1 {
+    font-size: clamp(3rem, 8vw, 7rem);
+    font-weight: 100;
+    line-height: 0.9;
+    max-width: 11ch;
+    text-align: center;
+}
+
+.scroll {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: #8f9c8a;
+}
+
+#sec-timeline-map {
+    height: 400vh;
+    position: relative;
+}
+
+#sec-timeline-map .sticky-container {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-columns:1fr 1fr;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 1px;
+    background: #8f9c8a;
+}
+
+.timeline-event {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.timeline-event::before {
+    content: '';
+    position: absolute;
+    left: -2rem;
+    top: 0.4rem;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #e81e39;
+    transform: translateX(-4.5px);
+}
+
+.section-title h2 {
+    font-size: clamp(2rem, 3vw, 4rem);
+    font-weight: 100;
+    line-height: 0.1;
+}
+
+.section-title p {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    color: #8f9c8a;
+}
