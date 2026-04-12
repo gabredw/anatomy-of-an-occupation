@@ -1,0 +1,3 @@
+const map = L.map('map', {scrollWheelZoom: false}).setView([31.5, 35.0], 8);
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
