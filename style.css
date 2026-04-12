@@ -6,7 +6,7 @@
 
 h1, h2, h3 {
     font-family: var(--serif);
-    color: #e81e39;
+    color: #f72641;
 }
 
 h3 {
@@ -61,7 +61,7 @@ body {
 
 .map-panel {
     /* width: 20%; */
-    flex: 1;
+    flex: 2;
     height: 100vh;
     position: sticky;
     top: 0;
@@ -74,7 +74,7 @@ body {
 
 .right-col {
     /* width: 80%; */
-    flex: 1;
+    flex: 3;
     padding: 2rem;
 }
 
@@ -107,14 +107,14 @@ body {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #e81e39;
+    background: #f72641;
     transform: translateX(-4.5px);
 }
 
 .section-title h2 {
     font-size: clamp(2rem, 3vw, 4rem);
     font-weight: 100;
-    line-height: 0.1;
+    line-height: 1.0;
 }
 
 .section-title p {
