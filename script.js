@@ -1,4 +1,4 @@
-const isMobile = window.innerWidth < 768;
+const isMobile = window.innerWidth > window.innerHeight;;
 
 const zoomLevel = isMobile ? 6 : 8; // tweak these values
 
