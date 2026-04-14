@@ -41,6 +41,29 @@ body {
     color: #a9b5a5;
 }
 
+#sec-quote {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+}
+
+#sec-quote h2 {
+    font-style: italic;
+    text-align: center;
+    font-weight: 100;
+    /* font-family: var(--sans); */
+    max-width: 60ch;
+    color: rgb(233, 224, 210);
+}
+
+#sec-quote p {
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: #a9b5a5;
+}
+
 #sec-timeline-map {
     display: flex;
     min-height: 100vh;
