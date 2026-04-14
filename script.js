@@ -1,6 +1,6 @@
 const isMobile = window.innerWidth > window.innerHeight;;
 
-const zoomLevel = isMobile ? 6 : 8; // tweak these values
+const zoomLevel = isMobile ? 4 : 8; // tweak these values
 
 const map = L.map('map', {
     scrollWheelZoom: false,
