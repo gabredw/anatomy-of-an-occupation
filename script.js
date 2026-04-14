@@ -1,7 +1,7 @@
 const isLandscape = window.innerWidth > window.innerHeight;
 const isPhone = window.innerWidth < 768; // typical phone breakpoint
 
-const zoomLevel = (isPhone && isLandscape) ? 6 : 8;
+const zoomLevel = (isPhone && isLandscape) ? 5 : 8;
 
 const map = L.map('map', {
     scrollWheelZoom: false,
