@@ -4,6 +4,11 @@
     --mono: 'DM Mono', monospace;
 }
 
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
 h1, h2, h3 {
     font-family: var(--serif);
     color: #f72641;
@@ -17,6 +22,10 @@ body {
     font-family: var(--sans);
     color: rgb(233, 224, 210);
     background-color: 	#171c15;
+}
+
+.section {
+    scroll-snap-align: start;
 }
 
 #sec-title-page {
@@ -47,6 +56,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-color: #21271f;
 }
 
 #sec-quote h2 {
@@ -67,7 +77,6 @@ body {
 #sec-timeline-map {
     display: flex;
     min-height: 100vh;
-    background-color: #21271f;
 }
 
 .sticky-container {
@@ -158,7 +167,7 @@ body {
     position: sticky;
     top: 0;
     z-index: 10;
-    background-color: #21271f;
+    background-color: #171c15;
     padding: 0.5rem 2rem 0.5rem 0.5rem;
     margin-left: -2rem;
     margin-bottom: 0;
