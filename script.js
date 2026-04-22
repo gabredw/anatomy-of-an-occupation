@@ -11,3 +11,7 @@ const map = L.map('map', {
 }).setView([31.5, 35.0], 7.5);
 
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+
+window.onload = function() {
+    alert("Welcome! This website is in progress and may be missing information. If you are using a mobile device, turn it to landscape mode for the best experience.")
+}
