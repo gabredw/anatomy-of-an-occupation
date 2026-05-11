@@ -50,7 +50,7 @@ body {
     color: #a9b5a5;
 }
 
-#sec-quote {
+.sec-quote {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +59,7 @@ body {
     background-color: #21271f;
 }
 
-#sec-quote h2 {
+.sec-quote h2 {
     font-style: italic;
     text-align: center;
     font-weight: 100;
@@ -68,11 +68,15 @@ body {
     color: rgb(233, 224, 210);
 }
 
-#sec-quote p {
+.sec-quote p {
     font-family: var(--mono);
     font-size: 0.8rem;
     color: #a9b5a5;
 }
+
+/* #sec-quote-1 {
+    scroll-snap-align: none;
+} */
 
 #sec-timeline-map {
     display: flex;
