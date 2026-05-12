@@ -172,3 +172,13 @@ body {
     margin-left: -2rem;
     margin-bottom: 0;
 }
+
+#sec-sources{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 20px;
+    font-family: var(--mono);
+    font-size: 0.8rem;
+    color: #a9b5a5;
+}
