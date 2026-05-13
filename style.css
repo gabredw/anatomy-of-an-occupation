@@ -181,8 +181,37 @@ body {
     height: 100vh;
 }
 
+#sv-map-container {
+    position: relative;
+}
+
 #sv-map {
     height: 100vh;
+}
+
+#map-attribution {
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    font-size: xx-small;
+    color: #21271f;
+    font-family: var(--sans);
+}
+
+#year-slider-container {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1rem;
+    color: rgb(233, 224, 210);
+    font-family: var(--mono);
+    background-color: #21271fad;
+    border-radius: 25px;
+}
+
+#year-slider {
+    width: 600px;
 }
 
 #sec-sources{
