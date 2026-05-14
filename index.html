@@ -12,21 +12,13 @@
     <link href="https://unpkg.com/leaflet/dist/leaflet.css" rel="stylesheet">
 </head>
 <body>
-
-    <div class="popup">
-        <div class="popup-content">
-            <h2>This website is a work in progress</h2>
-            <button class="close-button">Close</button>
-        </div>
-    </div>
-
     <section class="section" id="sec-title-page">
         <h1>Anatomy of an Occupation</h1>
         <p><em>A Visual History of Israel's Injustices in Palestine</em></p>
         <div class="scroll">↓ scroll to begin ↓</div>
     </section>
 
-    <section class="section" id="sec-quote">
+    <section class="section sec-quote" id="sec-quote-1">
         <h2>"I have the strongest belief that the historical and moral sufficiency of the Palestinian cause will finally outlast and outstrip any attempts to misrepresent it."</h2>
         <p>&ndash; Edward W. Said, <em>The Question of Palestine</em></p>
     </section>
@@ -42,7 +34,7 @@
                 <div class="timeline-panel">
                     <div class="section-title">
                         <h2>Timeline of Events</h2>
-                        <p>Key events in the dispossession of the Palestinian people</p>
+                        <p>Key events in the dispossession of the Palestinian people through 1967</p>
                     </div>
 
                     <div class="timeline">
@@ -100,13 +92,40 @@
         </div>
     </section>
 
+    <section class="section sec-quote">
+        <h2>"The being of Israel is the non-being of Palestine"</h2>
+        <p>&ndash; Fayez Sayegh, 1967</p>
+    </section>
+
+    <section class="section" id="sec-settler-violence">
+        <div id="sv-map-container">
+            <div class="section-title">
+                <h2>Settler Violence</h2>
+                <!-- <p>Key events in the dispossession of the Palestinian people</p> -->
+            </div>
+            <div id="sv-map"></div>
+            <div id="map-attribution">Source: ACLED (Armed Conflict Location & Event Data), accessed September 2025.<br>Filtered by actor, location, and year. Coordinates jittered for visual clarity. acleddata.com</div>
+            <div id="year-slider-container">
+                <input type="range" id="year-slider" min="2016" max="2024" step="1" value="2016">
+                <span id="year-label">2016</span>
+            </div>
+        </div>
+    </section>
+
     <section class="section" id="sec-sources">
         <ol class="sources">
+            <li>ACLED (Armed Conflict Location & Event Data), accessed September 2025. Filtered to events in Israel and Palestine, 2016-2025 via ACLED Data Export Tool. Further filtered by actor, location and year. Additional columns added for visualization purposes. Coordinates jittered slightly for visual clarity. acleddata.com</li>
+            <li>Harfouch, John. “‘The being of Israel is the non-being of Palestine’: Understanding Zionism through the Work of Fayez Sayegh.” Liberated Texts. November 10, 2025. https://liberatedtexts.com/reviews/the-being-of-israel-is-the-non-being-of-palestine-understanding-zionism-through-the-work-of-fayez-sayegh/</li>
             <li>Institute for Middle East Understanding (IMEU). “Timeline: The Palestinian Nakba (Catastrophe) & Establishment of Israeli Apartheid.” May 8, 2013. https://imeu.org/resources/the-nakba/timeline-the-palestinian-nakba-catastrophe-establishment-of-israeli-apartheid/146</li>
+            <li>Raleigh, Clionadh, Roudabeh Kishi, and Andrew Linke. “Political instability patterns are obscured by conflict dataset scope conditions, sources, and coding choices.” Humanities and Social Sciences Communications, February 25, 2023. https://doi.org/10.1057/s41599-023-01559-4 </li>
             <li>Said, Edward W. The Question of Palestine. Times Books, 1979.</li>
         </ol>
     </section>
     
-    <script src="script.js"></script>
+    <script src="timeline-map.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/plotly.js/3.1.1/plotly.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+    <script src="sv-map.js"></script>
 </body>
 </html>

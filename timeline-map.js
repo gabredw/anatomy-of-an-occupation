@@ -10,8 +10,7 @@ const map = L.map('map', {
     dragging: false
 }).setView([31.5, 35.0], 7.5);
 
-L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap contributors &copy; CARTO'
+}).addTo(map);
 
-window.onload = function() {
-    alert("Welcome! This website is in progress and may be missing information. If you are using a mobile device, turn it to landscape mode for the best experience.")
-}
