@@ -12,9 +12,9 @@ Papa.parse('data/sv-map-data.csv', {
                 lon: filteredDf.map(item => parseFloat(item.longitude_jitter)),
                 lat: filteredDf.map(item => parseFloat(item.latitude_jitter)),
                 marker: {
-                    color: 'red',
+                    color: '#f72641',
                     size: 5,
-                    opacity: 0.5
+                    opacity: 0.9
                 },
                 customdata: filteredDf.map(item => [
                     item.fatalities,
